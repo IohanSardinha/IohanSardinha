@@ -5,7 +5,7 @@ class CreateTaskLists < ActiveRecord::Migration[5.0]
       t.text :note
       t.integer :priority
       t.datetime :whenDue
-      t.boolean false :done
+      t.boolean :done
 
       t.timestamps
     end
