@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: MyString
+  note: MyText
+  priority: 1
+  whenDue: 2017-05-10 11:45:47
+  done: 
+
+two:
+  task: MyString
+  note: MyText
+  priority: 1
+  whenDue: 2017-05-10 11:45:47
+  done: 

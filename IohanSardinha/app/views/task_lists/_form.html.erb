@@ -1,0 +1,42 @@
+<%= form_for(task_list) do |f| %>
+  <% if task_list.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(task_list.errors.count, "error") %> prohibited this task_list from being saved:</h2>
+
+      <ul>
+      <% task_list.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :task %>
+    <%= f.text_field :task %>
+  </div>
+
+  <div class="field">
+    <%= f.label :note %>
+    <%= f.text_area :note %>
+  </div>
+
+  <div class="field">
+    <%= f.label :priority %>
+    <%= f.number_field :priority %>
+  </div>
+
+  <div class="field">
+    <%= f.label :whenDue %>
+    <%= f.datetime_select :whenDue %>
+  </div>
+
+  <div class="field">
+    <%= f.label :done %>
+    <%= f.text_field :done %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
